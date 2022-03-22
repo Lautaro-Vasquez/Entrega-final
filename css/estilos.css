@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px; }
+
+.fas {
+  font-size: 1.2em; }
+
+.navbar {
+  background-color: #5f5f5f;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center; }
+
+.navbar .logo {
+  height: 60px;
+  width: 60px;
+  grid-column: 2 / 3; }
+
+.navbar .menu {
+  grid-column: 4 / 7;
+  display: flex; }
+
+.navbar ul li {
+  margin-right: 3em;
+  list-style: none; }
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; }
+
+.navbar a:hover {
+  color: #fff; }
+
+.ramm {
+  height: 83vh;
+  background-image: url(../Imagenes/rammstein-gruppa-nemcy-metal.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  position: relative; }
+
+.gradiante {
+  transform: rotateZ(-5deg); }
+
+.ramm .info-content {
+  grid-column: 7 / 8;
+  grid-row: 3 / 6;
+  color: #fff;
+  z-index: 1; }
+
+.ramm .info-content h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8em; }
+
+.ramm .info-content h1 {
+  font-weight: 900;
+  font-size: 5em;
+  color: #EDCB54; }
+
+.ramm .info-content .btn {
+  font-size: 1em;
+  color: #fff;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #EDCB54;
+  margin-top: 10px; }
+
+.ramm .info-content .btn:hover {
+  background-color: #EDCB54;
+  color: #181818; }
+
+/* Footer */
+.radio-section {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  background-color: #181818;
+  color: #fff;
+  grid-template-areas: "listen-online follow-me social-network"; }
+
+.radio-section .listen-online {
+  grid-template-areas: listen-online;
+  display: flex;
+  justify-content: center;
+  background-color: #EDCB54;
+  color: #181818;
+  padding: 26px; }
+
+.radio-section .listen-online .fas {
+  margin-right: 15px;
+  font-size: 1.5em; }
+
+.radio-section h2 {
+  grid-template-areas: follow-me;
+  text-align: center; }
+
+.radio-section .social-network {
+  grid-template-areas: social-network; }
+
+.radio-section .social-network .fab {
+  font-size: 1.4em;
+  color: #EDCB54;
+  margin-right: 15px;
+  justify-content: flex-end; }
+
+/* Galería */
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+.grid-container {
+  display: grid;
+  background-color: #9f9f9f;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense; }
+
+/* Blog */
+.Blog {
+  background-color: #9f9f9f;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 5%);
+  height: 51vh; }
+
+.Blog h1 {
+  grid-column: 2 / 4;
+  justify-content: center; }
+
+.Blog p {
+  display: grid;
+  grid-column: 1 / 6;
+  grid-row: 1 / 3;
+  font-size: 10px; }
+
+/*Discografía*/
+.Music {
+  background-color: #9f9f9f;
+  display: grid;
+  grid-template-columns: repeat(7, 20%);
+  grid-template-rows: repeat(10, 20%);
+  height: 101vh; }
+
+.Music h1 {
+  grid-column: 2/5;
+  grid-row: auto; }
+
+.alemania {
+  grid-column: 1/3;
+  grid-row: 2; }
+
+.alemania_p {
+  grid-column: 4/6;
+  grid-row: 2;
+  color: #fff; }
+
+.du {
+  grid-column: 1/3;
+  grid-row: 3; }
+
+.du_p {
+  grid-column: 4/6; }
+
+.sonne {
+  grid-column: 1/3;
+  grid-row: 4; }
+
+.sonne_p {
+  grid-column: 4/6;
+  color: floralwhite; }
+
+.a {
+  grid-column: 1/3;
+  grid-row: 5; }
+
+.a_p {
+  grid-column: 4/6; }
+
+.rammstein {
+  grid-column: 1/4; }
+
+@media screen, (min-width: 1000px) {
+  .Blog h1 {
+    grid-column: 3 / 5;
+    grid-row: 1; }
+  .Blog p {
+    grid-row: 5 / 6;
+    font-size: medium; } }
