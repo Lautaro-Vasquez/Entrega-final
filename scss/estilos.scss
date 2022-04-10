@@ -79,7 +79,7 @@ body {
   background: none;
   padding: 10px 20px;
   border-radius: 30px;
-  border:1px solid#EDCB54;
+  border:1px solid #EDCB54;
   margin-top: 10px;
 }
 .ramm .info-content .btn:hover {
@@ -129,6 +129,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 
   background-color: #03afff;
   border-radius: 4px;
@@ -162,8 +163,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: auto;
-  width: auto;
+  max-width: 100%; 
 }
 
 
